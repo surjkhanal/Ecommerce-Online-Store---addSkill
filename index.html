@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="autocomplete.css">
   <script src="./script.js" defer></script>
 </head>
 
@@ -27,14 +28,14 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#"> <strong> Best Veggies </strong> </a></li>
+          <li class="active"><a href="/"> <strong> Best Veggies </strong> </a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Deals</a></li>
           <li><a href="#">Stores</a></li>
           <li><a href="#">Contact</a></li>
           <li>
             <!--  -->
-            <form class="form-inline" id="search-form">
+            <form autocomplete="off" class="form-inline autocomplete" id="search-form">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
               <select name="product-type" id="product-type">
                 <option value="fruit">Fruit</option>
@@ -101,7 +102,8 @@
         </div>
       </div>
     </div>
-  </div><br>
+  </div>
+  <br>
 
   <div class="container">
     <blockquote>
@@ -147,7 +149,20 @@
         </div>
       </div>
     </div>
-  </div><br><br>
+  </div>
+  <br>
+
+  <div class="container hidden">
+    <blockquote>
+      <p>Result's</p>
+    </blockquote>
+    <div class="row" id="result-target">
+
+
+    </div>
+  </div>
+  
+  <br><br>
 
   <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
